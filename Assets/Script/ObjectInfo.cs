@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 enum ObjectType {
-    Cube, Ball
+    Cube, Ball, Door
 }
 public class ObjectInfo : MonoBehaviour {
     [SerializeField]

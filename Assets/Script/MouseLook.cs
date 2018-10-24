@@ -10,9 +10,12 @@ public class MouseLook : MonoBehaviour {
 
 	private Transform myBody;
 
-	//Float
+	//Int
 	[Range(2,6)]
 	public int mouseSenstivity = 1;
+
+	//Float
+	private 
 
 	// Use this for initialization
 	void Start () {
@@ -30,9 +33,13 @@ public class MouseLook : MonoBehaviour {
 			                              Input.GetAxisRaw("Mouse Y"));
 		mouseDirection += mouseChange * mouseSenstivity;
 
-		this.transform.localRotation =  Quaternion.AngleAxis(-mouseDirection.y, Vector3.right);
+		//Limits the Y view of Player.
+		float rot = Mathf.Clamp (-mouseDirection.y, -36, 36);
+
+		this.transform.localRotation =  Quaternion.AngleAxis(rot, Vector3.right);
 
 		myBody.localRotation = Quaternion.AngleAxis (mouseDirection.x, Vector3.up);
+
 	
 	}
 }

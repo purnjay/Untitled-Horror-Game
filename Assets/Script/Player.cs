@@ -11,12 +11,12 @@ public class Player : MonoBehaviour {
 
 	//Bools
 	public bool isGrounded;
-	bool canJump;
 
 	//Components
 
 	Rigidbody rigidb;
 	public Transform groundCheck;
+	public LayerMask Ground;
 
 	// Use this for initialization
 	void Start () {
@@ -35,18 +35,16 @@ public class Player : MonoBehaviour {
 		Vector3 moveDirection = new Vector3 (horizontal, 0f, vertical) * moveSpeed * Time.deltaTime;
 		transform.Translate (moveDirection);
 
-		isGrounded = Physics.CheckSphere (groundCheck.position, 0.1f);
+		isGrounded = Physics.CheckSphere (groundCheck.position, 0.1f, Ground);
 
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded) {
-			canJump = !canJump;
-		}
+			isGrounded = false;
+			rigidb.AddForce (Vector3.up * jumpForce);
 
+		}
 	}
 
 	void FixedUpdate(){
-		if (canJump) {
-			rigidb.AddForce (Vector3.up * jumpForce);
-			canJump = !canJump;
-		}
+		
 	}
 }
