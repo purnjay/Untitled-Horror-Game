@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4325805804859658}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -37,7 +37,8 @@ GameObject:
   - component: {fileID: 20596517457669500}
   - component: {fileID: 81473220358864256}
   - component: {fileID: 114212435441406172}
-  m_Layer: 0
+  - component: {fileID: 114361988919037764}
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +59,7 @@ GameObject:
   - component: {fileID: 54084371199075894}
   - component: {fileID: 114825412173355700}
   - component: {fileID: 114592030535314000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,6 +223,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSenstivity: 4
+--- !u!114 &114361988919037764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291270937231934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27e746198a1d97409fb45788297aee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectMaterial: {fileID: 2100000, guid: 44640dc1806f16a4291ede604bcde917, type: 2}
 --- !u!114 &114592030535314000
 MonoBehaviour:
   m_ObjectHideFlags: 1

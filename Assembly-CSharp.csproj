@@ -60,7 +60,9 @@
      <Compile Include="Assets\Script\InteractionCheck.cs" />
      <Compile Include="Assets\Script\MouseLook.cs" />
      <Compile Include="Assets\Script\ObjectInfo.cs" />
+     <Compile Include="Assets\Script\PixelImageEffect.cs" />
      <Compile Include="Assets\Script\Player.cs" />
+     <None Include="Assets\Art\Shaders\PixelateImageEffect.shader" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Hi/Documents/Unity Projects/Horror-Game/Horror-Project/Horror-game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
