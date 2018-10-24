@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 81473220358864256}
   - component: {fileID: 114212435441406172}
   - component: {fileID: 114361988919037764}
+  - component: {fileID: 114824884223714960}
   m_Layer: 10
   m_Name: Main Camera
   m_TagString: Untagged
@@ -251,6 +252,20 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &114824884223714960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291270937231934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5072fa9d386525442aad40d5f14e7a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bobbingSpeed: 0.2
+  bobbingAmount: 0.12
+  midpoint: 0.43
 --- !u!114 &114825412173355700
 MonoBehaviour:
   m_ObjectHideFlags: 1

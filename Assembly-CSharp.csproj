@@ -53,15 +53,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\CrosshairSwitcher.cs" />
-     <Compile Include="Assets\Script\DoorSystem.cs" />
-     <Compile Include="Assets\Script\InteractionBehaviours\DestroyInteraction.cs" />
-     <Compile Include="Assets\Script\InteractionBehaviours\InteractionBehaviour.cs" />
-     <Compile Include="Assets\Script\InteractionCheck.cs" />
-     <Compile Include="Assets\Script\MouseLook.cs" />
-     <Compile Include="Assets\Script\ObjectInfo.cs" />
-     <Compile Include="Assets\Script\PixelImageEffect.cs" />
-     <Compile Include="Assets\Script\Player.cs" />
+     <Compile Include="Assets\Scripts\CrosshairSwitcher.cs" />
+     <Compile Include="Assets\Scripts\DoorSystem.cs" />
+     <Compile Include="Assets\Scripts\HeadBob.cs" />
+     <Compile Include="Assets\Scripts\InteractionBehaviours\DestroyInteraction.cs" />
+     <Compile Include="Assets\Scripts\InteractionBehaviours\InteractionBehaviour.cs" />
+     <Compile Include="Assets\Scripts\InteractionCheck.cs" />
+     <Compile Include="Assets\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\ObjectInfo.cs" />
+     <Compile Include="Assets\Scripts\PixelImageEffect.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <None Include="Assets\Art\Shaders\PixelateImageEffect.shader" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Hi/Documents/Unity Projects/Horror-Game/Horror-Project/Horror-game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
